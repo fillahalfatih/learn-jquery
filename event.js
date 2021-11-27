@@ -28,4 +28,31 @@ $(document).ready(function() {
     $(document).on('mousemove', function(e) {
         $('#code').html('coords: Y : '+ e.clientY + ' ' + 'X : ' + e.clientX);
     });
+
+    // Focus and Blur
+    $('input').focus(function() {
+        $(this).css('background', 'pink');
+    });
+
+    $('input').blur(function() {
+        $(this).css('background', 'white');
+    });
+
+    // $('input').keyup(function(e) {
+    //     console.log(e.target.value);
+    // });
+
+    // $('select#gender').change(function(e) {
+    //     alert(e.target.value);
+    // });
+
+    $('#form').submit(function(e) {
+        e.preventDefault();
+        const value = {
+            Name : $('input#name').val(),
+            Email : $('input#email').val(),
+            Gender : $('select#gender').val(),
+        }
+        console.table(value);
+    });
 });
