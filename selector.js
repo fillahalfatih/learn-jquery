@@ -18,24 +18,9 @@ $(document).ready(function(){
 
     $(':button').hide();
 
-    $('[href').css({
+    $('[href]').css({
         'background': 'lightblue',
         'color': 'black',
         'text-decoration': 'none'
     });
 });
-
-$(document).ready(function() {
-        $('p').on('click', function() {
-        $('#container').css({
-            'color': 'aqua',
-            'background': 'darkgrey'
-        });
-    });
-})
-
-$(document).ready(function() {
-        $('p').on('click', function() {
-        $('#container').css('color', 'aqua',);
-    });
-})
