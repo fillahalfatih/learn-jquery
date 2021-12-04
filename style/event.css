@@ -25,4 +25,22 @@ header {
     background-color: rgb(43, 43, 43);
     padding: 5px 10px;
     border-radius: 5px;
+
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+table,
+td {
+    text-align: center;
+    /* padding: 5px; */
+    background-color: rgb(43, 43, 43);
+    color: aqua;
+    border: 1px solid aqua;
+    border-radius: 5px;
+}
+
+td {
+    padding: 3px 5px;
 }
