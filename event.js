@@ -12,10 +12,31 @@ $(document).ready(function() {
         $('.para1').toggle();
     });
 
+    $('#coords').on('click', function() {
+        $('#code').toggle();
+    });
+
     // .dblclick for double click
     // .mouseenter & .mouseleave
     // .mousemove
     // .mouseup & .mousedown
+
+    // Focus and Blur
+    $('input').on('focus', function() {
+        $(this).css('background', 'pink');
+    });
+
+    $('input').on('blur', function() {
+        $(this).css('background', 'white');
+    });
+
+    // $('input').keyup(function(e) {
+    //     console.log(e.target.value);
+    // });
+
+    // $('select#gender').change(function(e) {
+    //     alert(e.target.value);
+    // });
 
     $('#btn1').on('click', function(e) {
         // console.log(e);
@@ -29,30 +50,21 @@ $(document).ready(function() {
         $('#code').html('coords: Y : '+ e.clientY + ' ' + 'X : ' + e.clientX);
     });
 
-    // Focus and Blur
-    $('input').focus(function() {
-        $(this).css('background', 'pink');
-    });
+    $('#table').hide();
 
-    $('input').blur(function() {
-        $(this).css('background', 'white');
-    });
-
-    // $('input').keyup(function(e) {
-    //     console.log(e.target.value);
-    // });
-
-    // $('select#gender').change(function(e) {
-    //     alert(e.target.value);
-    // });
-
-    $('#form').submit(function(e) {
+    $('#form').on('submit', function(e) {
         e.preventDefault();
         const value = {
             Name : $('input#name').val(),
             Email : $('input#email').val(),
             Gender : $('select#gender').val(),
         }
+        
         console.table(value);
+
+        $('#table').show();
+        $('#val-name').html(value.Name);
+        $('#val-email').html(value.Email);
+        $('#val-gender').html(value.Gender);
     });
 });
