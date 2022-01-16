@@ -14,6 +14,8 @@ header {
     color: #FFF;
     padding: 45px 0px;
     text-align: center;
+
+    line-height: 2rem;
 }
 #container {
     max-width: 750px;
