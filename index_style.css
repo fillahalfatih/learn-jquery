@@ -113,7 +113,7 @@ nav a,
 }
 
 .card_2 img {
-    transform: rotateY(180deg);
+    /* transform: rotateY(180deg); */
 }
 
 .container img{
