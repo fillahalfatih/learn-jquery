@@ -112,9 +112,9 @@ nav a,
     color: #F5F5F5;
 }
 
-.card_2 img {
-    /* transform: rotateY(180deg); */
-}
+/* .card_2 img {
+    transform: rotateY(180deg);
+} */
 
 .container img{
     width: 100%;
