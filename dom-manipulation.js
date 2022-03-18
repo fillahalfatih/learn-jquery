@@ -1,18 +1,14 @@
 
 $(document).ready(function() {
-    // Multiple CSS
-    $('p.para1').css({
-        color: 'darkslategray',
-        background: 'lightcoral'
-    });
 
     // Add class
-    $('p.para2').addClass('myClass');
+    // $('p.para2').addClass('myClass');
     // Remove class
     // $('p.para2').removeClass('myClass');
     // Toggle class
     $('#btn1').on('click', function() {
-       $('p.para2').toggleClass('myClass') 
+       $('p.para1').toggleClass('myClass');
+       $('p.para2').toggleClass('myClass');
     });
 
     // Add a text & HTML elements
@@ -35,5 +31,11 @@ $(document).ready(function() {
 
     $('#btn-append-to').on('click', function() {
         $('ul').toggle();
-     });
+    });
+
+    // switch theme with .toggleClass
+    $('#switch-theme').on('click', function() {
+        // $('#container').toggleClass('switch-theme');
+        $('body').toggleClass('switch-theme');
+    });
 })
