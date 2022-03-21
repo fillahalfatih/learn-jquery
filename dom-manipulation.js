@@ -35,8 +35,8 @@ $(document).ready(function() {
 
     // switch theme with .toggleClass
     $('#switch-theme').on('click', function() {
-        $('#container').toggleClass('switch-theme');
-        // $('body').toggleClass('switch-theme');
+        // $('#container').toggleClass('switch-theme');
+        $('body').toggleClass('switch-theme');
     });
 
     // target _blank
