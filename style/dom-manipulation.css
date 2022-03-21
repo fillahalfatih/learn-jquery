@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-size: 16px;
     font-family: sans-serif;
     background: #F4F4F4;
     line-height: 1.8rem;
 }
+
 header {
     background-color: #333;
     color: #FFF;
@@ -17,10 +19,13 @@ header {
 
     line-height: 2rem;
 }
+
 #container {
     max-width: 750px;
     margin: 12px auto;
     padding: 20px;
+
+    border-radius: 5px;
 }
 
 p {
@@ -34,4 +39,15 @@ ul {
 .myClass {
     color: lightcoral;
     background: darkslategray;
+}
+
+/* add a new class */
+.switch-theme {
+    background-color: darkslategray;
+    color: #FFF;
+}
+
+.switch-theme header {
+    background-color: lightcoral;
+    color: #FFF;
 }
