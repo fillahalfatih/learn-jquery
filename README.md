@@ -15,6 +15,7 @@ Landing page preview: [index.html](https://github.com/fillahalfatih/learn-jquery
 
 ## Screenshot
 ![jQuery selectors](https://github.com/fillahalfatih/learn-jquery/blob/main/img/jQuery%20_%20Selectors.png "selectors")
+
 ![jQuery events](https://github.com/fillahalfatih/learn-jquery/blob/main/img/jQuery%20_%20Events.png "events")
 
 ## Author
