@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+color {
+    color: #F5F5F5;
+    color: #F05454;
+    color: #30475E;
+    color: #121212;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-size: 16px; */
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    background: #F4F4F4;
+    line-height: 1.8rem;
+}
+
+header {
+    height: 100vh;
+    background-color: #30475E;
+    color: #FFF;
+    padding: 45px 0px;
+    text-align: center;
+    line-height: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-weight: 500;
+    border-bottom: 3px solid #30475E;
+}
+
+header h1:hover {
+    border-bottom: 3px solid #F05454;
+    transition: 0.3s;
+}
+
+header p {
+    font-size: 18px;
+}
+
+header p span {
+    margin: 0px 3px 0px 0px;
+    padding: 3px 7px;
+    border: 1.5px solid #F05454;
+    transition: 0.3s;
+}
+
+header p code {
+    font-family: 'Space Mono', monospace;
+}
+
+header p span:hover {
+    margin: 0px 3px 0px 0px;
+    padding: 3px 7px;
+    border: 1.5px solid #F05454;
+
+    background-color: #F05454;
+    transition: 0.3s;
+}
+
+#container {
+    max-width: 750px;
+    margin: 12px auto;
+    padding: 20px;
+
+    border-radius: 5px;
+}
+
+p {
+    margin: 12px 0px;
+}
+
+ul {
+    padding-left: 20px;
+}
